@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+if [ -z "${AGENT_NAME}"]; then
+export AGENT_NAME=$(hostname)
+fi
+
 ./config.sh \
     --unattended \
     --url ${ADO_PROJECT_URL} \

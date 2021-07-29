@@ -1,0 +1,9 @@
+services:
+  ado:
+    image: ado-agent:2.189.0-python
+    build: .
+    environment:
+      ADO_PROJECT_URL: https://dev.azure.com/codeminus
+      ADO_POOL: Default
+      ADO_PAT: ${CODEMINUS_ADO_PAT}
+    user: root
