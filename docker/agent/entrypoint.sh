@@ -2,7 +2,7 @@
 set -e
 
 if [ -z "${AGENT_NAME}"]; then
-export AGENT_NAME=$(hostname)
+export AGENT_NAME=$(petname)
 fi
 
 ./config.sh \

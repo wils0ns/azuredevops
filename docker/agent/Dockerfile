@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
   software-properties-common \
   wget \
   libcurl4 \
-  git && \
+  git \
+  petname && \
   wget -O libicu.deb  http://ftp.us.debian.org/debian/pool/main/i/icu/libicu69_69.1-2_amd64.deb  && \
   dpkg -i libicu.deb && \
   wget -O agent.tar.gz https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz && \
