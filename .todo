@@ -1,0 +1,5 @@
+Azure DevOps Agent:
+  ☐ Update git
+    https://github.com/actions/virtual-environments/blob/main/images/linux/scripts/installers/git.sh
+  ☐ Clean image to reduce size
+    https://github.com/actions/virtual-environments/blob/main/images/linux/scripts/installers/cleanup.sh
